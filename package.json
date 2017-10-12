@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "concurrently \"webpack -p\" \"bundle exec jekyll build\"",
-    "dev": "concurrently \"webpack\" \"bundle exec jekyll serve\""
+    "dev": "concurrently \"webpack --watch\" \"bundle exec jekyll serve\""
   },
   "author": "Scott Bailey",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "concurrently": "^3.5.0",
+    "jest": "^21.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "webpack": "^3.7.1"
