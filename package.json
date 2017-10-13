@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:update": "jest -u",
     "coverage": "jest --coverage",
     "build": "concurrently \"webpack -p\" \"bundle exec jekyll build\"",
     "dev": "concurrently \"webpack --watch\" \"bundle exec jekyll serve\""
