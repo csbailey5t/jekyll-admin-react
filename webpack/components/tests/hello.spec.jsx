@@ -1,9 +1,9 @@
 import React from 'react';
-import Hello from '../Hello';
 import renderer from 'react-test-renderer';
+import Hello from '../Hello';
 
 test('Hello component renders as expected', () => {
   const component = renderer.create(<Hello />);
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

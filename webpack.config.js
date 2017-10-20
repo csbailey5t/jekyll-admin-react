@@ -2,10 +2,13 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: "./webpack/index.js",
+  entry: './webpack/index.jsx',
   output: {
     path: path.resolve(__dirname, 'src/assets/'),
-    filename: "bundle.js"
+    filename: 'bundle.js'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   module: {
     loaders: [
