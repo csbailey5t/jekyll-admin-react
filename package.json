@@ -1,8 +1,7 @@
 {
   "name": "jekyll-admin-react",
   "version": "1.0.0",
-  "description":
-    "Repo to test setting up React, Webpack, and Jekyll Admin in a Jekyll 3.x site",
+  "description": "Repo to test setting up React, Webpack, and Jekyll Admin in a Jekyll 3.x site",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -16,8 +15,11 @@
   "license": "ISC",
   "dependencies": {
     "global": "^4.3.2",
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
