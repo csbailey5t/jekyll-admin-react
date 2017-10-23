@@ -10,11 +10,9 @@ class Video extends Component {
 
   componentDidMount() {
     const player = document.getElementById('player');
-    player.addEventListener('timeupdate', this.tick);
-  }
-
-  tick() {
-    console.log('ticking', this.currentTime);
+    player.addEventListener('timeupdate', () => {
+      this.setState({ time: player.currentTime });
+    });
   }
 
   render() {
