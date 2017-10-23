@@ -1,7 +1,7 @@
 import { SET_CURRENT_TIME } from './actions';
 
 const DEFAULT_STATE = {
-  currentTime: 'header'
+  currentTime: 0
 };
 
 const setCurrentTime = (state, action) =>
