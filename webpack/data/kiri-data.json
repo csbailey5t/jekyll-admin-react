@@ -1,0 +1,26 @@
+{
+  "kiri": {
+    "dance": [
+      {
+        "timeStart": 29,
+        "timeEnd": 49,
+        "name": "Ageha"
+      },
+      {
+        "timeStart": 50,
+        "timeEnd": 78,
+        "name": "Medium Zigzag"
+      },
+      {
+        "timeStart": 79,
+        "timeEnd": 87,
+        "name": "Scooping point"
+      },
+      {
+        "timeStart": 88,
+        "timeEnd": 104,
+        "name": "Open-retreat"
+      }
+    ]
+  }
+}

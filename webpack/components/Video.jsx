@@ -17,11 +17,7 @@ class Video extends Component {
   render() {
     return (
       <div>
-        <video
-          id="player"
-          src="http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_h264.mov"
-          controls
-        />
+        <video id="player" src={this.props.videoUrl} controls />
         <h3>{this.props.currentTime}</h3>
       </div>
     );
@@ -29,11 +25,13 @@ class Video extends Component {
 }
 
 Video.propTypes = {
-  currentTime: PropTypes.number
+  currentTime: PropTypes.number,
+  videoUrl: PropTypes.string
 };
 
 Video.defaultProps = {
-  currentTime: 0
+  currentTime: 0,
+  videoUrl: ''
 };
 
 const mapStateToProps = state => ({ currentTime: state.currentTime });
