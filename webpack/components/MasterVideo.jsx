@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { setCurrentTime } from '../actionCreators';
 import store from '../store';
 
-class Video extends Component {
+class MasterVideo extends Component {
   componentDidMount() {
     const player = document.getElementById('player');
     player.addEventListener('timeupdate', () => {
@@ -24,16 +24,16 @@ class Video extends Component {
   }
 }
 
-Video.propTypes = {
+MasterVideo.propTypes = {
   currentTime: PropTypes.number,
   videoUrl: PropTypes.string
 };
 
-Video.defaultProps = {
+MasterVideo.defaultProps = {
   currentTime: 0,
   videoUrl: ''
 };
 
 const mapStateToProps = state => ({ currentTime: state.currentTime });
 
-export default connect(mapStateToProps)(Video);
+export default connect(mapStateToProps)(MasterVideo);
