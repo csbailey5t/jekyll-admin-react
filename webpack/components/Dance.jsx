@@ -5,17 +5,25 @@ import data from '../data/kiri-data.json';
 
 class Dance extends Component {
   currentDance() {
-    console.log(data);
-    console.log(this);
     // return name if currentTime is > timeStart and < timeEnd for dance in kiri.dance
-    return '';
+    // use Object.values to iterate over values in kiri.dance
+    const chunks = data.kiri.dance;
+    let dance = '';
+    for (let i = 0; i < chunks.length; i += 1) {
+      if (
+        this.props.currentTime >= chunks[i].timeStart &&
+        this.props.currentTime < chunks[i].timeEnd
+      ) {
+        dance = chunks[i].name;
+      }
+    }
+    return dance;
   }
 
   render() {
     return (
       <div className="dance-style">
         <h2>Dance Style: {this.currentDance()}</h2>
-        <h3>{this.props.currentTime}</h3>
       </div>
     );
   }
